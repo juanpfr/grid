@@ -1,0 +1,129 @@
+/* CSS embutido para o layout desejado */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    box-shadow: 0px 5px 20px black;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.menu li a:hover {
+    background-color: #6a6969;
+}
+
+.container {
+    max-width: 1200px; /* Limita a largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner */
+    display: grid; /* Ativa o grid layout */
+    grid-template-columns: 0.7fr 1fr 1fr; /* Define 3 colunas, a primeira menor */
+    grid-template-rows: auto auto auto; /* Altura automática para cada linha */
+    grid-template-areas:
+        "sidenav item1 item2"
+        "sidenav item3 item4"
+        "footer footer footer"; /* Define as áreas nomeadas para cada elemento */
+    gap: 20px; /* Espaçamento entre as áreas do grid */
+    padding: 20px;
+    border: 1px solid #fff; /* Bordas para destacar o contêiner */
+}
+
+.sidenav {
+    background-color: #1E3A8A;
+    color: #F0F4FF;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.sidenav h2 {
+    margin-bottom: 10px;
+}
+
+.sidenav p {
+    margin-bottom: 10px;
+}
+
+.sidenav a {
+    color: #F0F4FF;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.item:nth-child(2) { grid-area: item1; }
+.item:nth-child(3) { grid-area: item2; }
+.item:nth-child(4) { grid-area: item3; }
+.item:nth-child(5) { grid-area: item4; }
+
+.item {
+    background-color: #ccc;
+    border-radius: 20px; /* Arredonda os cantos do item */
+    display: flex; /* Organiza o conteúdo do item como um flex container */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #6a6969;
+    border-radius: 20px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.footer p {
+    margin-bottom: 15px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
