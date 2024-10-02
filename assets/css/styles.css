@@ -142,3 +142,9 @@ h1{
     text-align: justify;
     width: 300px;
 }
+
+footer{
+    text-align: center;
+    background: black;
+    padding: 10px 0;
+}
