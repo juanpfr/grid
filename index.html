@@ -1,23 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid CSS</title>
+    <title>Portfólio de Fotografia do Juan</title>
 
-    <!-- Links -->
-
-    <!-- Reset CSS -->
     <link rel="stylesheet" href="assets/css/reset.css">
 
-    <!-- Meu estilo -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    
 </head>
 
 <body>
     <header>
-        <div class="logo"></div>
+        <img class="logo" src="assets/img/fiufiu.png" alt="logo fiufiu">
         <ul class="menu">
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Galeria</a></li>
@@ -25,43 +22,55 @@
         </ul>
     </header>
 
-    <div class="container">
-        <aside class="sidenav">
+    <h1>Portfólio de Fotografia do Fiufiu</h1>
+
+    <section class="container">
+        <!-- Barra lateral -->
+        <div class="sidenav">
             <h2>Sobre Mim</h2>
-            <p>Sou um fotógrafo apaixonado pela arte de capturar momentos únicos e expressar emoções através das lentes.</p>
-            <a href="#">Natureza</a>
-            <a href="#">Retratos</a>
-            <a href="#">Paisagens</a>
-            <a href="#">Urbanos</a>
-        </aside>
+            <p>Sou um fotógrafo apaixonado por capturar momentos únicos e expressar emoções através das lentes. Aqui
+                você encontra uma seleção de meus trabalhos favoritos.</p>
+            <ul>
+                <li><a href="#">Natureza</a></li>
+                <li><a href="#">Retratos</a></li>
+                <li><a href="#">Paisagens</a></li>
+                <li><a href="#">Urbanos</a></li>
+            </ul>
+        </div>
 
+        <!-- Itens da galeria de imagens -->
         <div class="item">
-            <img src="assets/img/foto1.jpg" alt="Descrição 1">
-            <p>Descrição 1</p>
+            <img src="assets/img/Jesus.png" alt="Descrição 1">
+            <p>Foto tirada de longe por fotografo da época de Jesus, o nosso único e suficiente salvador, a 2024 anos atrás.</p>
         </div>
         <div class="item">
-            <img src="assets/img/foto1.jpg" alt="Descrição 2">
-            <p>Descrição 2</p>
+            <img src="assets/img/bicharada.png" alt="Descrição 2">
+            <p>Dois trigres descansando após o seu almoço (Não sabemos o que foi mas como estavam em um zoológico...).</p>
         </div>
         <div class="item">
-            <img src="assets/img/foto1.jpg" alt="Descrição 3">
-            <p>Descrição 3</p>
+            <img src="assets/img/flormaneira.png" alt="Descrição 3">
+            <p>Flores da cor rosa 👍</p>
         </div>
         <div class="item">
-            <img src="assets/img/foto1.jpg" alt="Descrição 4">
-            <p>Descrição 4</p>
+            <img src="assets/img/batprato.png" alt="Descrição 4">
+            <p>Batprato 🦇</p>
         </div>
-    </div>
 
-    <footer class="footer">
-        <h3>Entre em Contato</h3>
-        <p>Para sessões fotográficas ou informações sobre meus trabalhos, entre em contato através das redes sociais ou
-            envie um e-mail para <a href="mailto:contato@fotografia.com">contato@fotografia.com</a></p>
-        <div class="social-icons">
-            <img src="assets/img/foto1.jpg" alt="Facebook">
-            <img src="assets/img/foto1.jpg" alt="Twitter">
-            <img src="assets/img/foto1.jpg" alt="Instagram">
+        <!-- Rodapé -->
+        <div class="footer">
+            <h3>Entre em Contato</h3>
+            <p>Para sessões fotográficas ou informações sobre meus trabalhos, entre em contato através das redes sociais
+                ou envie um e-mail para <a href="#">contato@fiufiumaneiro.com</a>.</p>
+            <div class="social-icons">
+                <a href="#"><img src="assets/img/foto1.jpg" alt="Facebook"></a>
+                <a href="#"><img src="assets/img/foto1.jpg" alt="Instagram"></a>
+                <a href="#"><img src="assets/img/foto1.jpg" alt="Twitter"></a>
+            </div>
         </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Portfólio de Fotografia. Todos os direitos reservados.</p>
     </footer>
 </body>
 
